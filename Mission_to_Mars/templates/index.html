@@ -13,16 +13,27 @@
   <div class="container">
 
     <div class="jumbotron text-center">
-      <h1>Mars is Cool</h1>
+      <h1>Mission to Mars</h1>
       <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape!</a></p>
     </div>
 
     <!-- Phone Listings -->
-    <div class="row" id="craiglist-listings">
+    <div class="row" id="Latest-News">
       <div class="col-md-12">
-        <h4 class="heading">{{listings.newest_title}} {{listings.newest_article}}</h4>
-        <small>{{listings.newest_title}}</small>
+        <h3 class="heading">Latest Mars News</h3>
+        <h5>{{listings.newest_title}}</h5>
+        <small>{{listings.newest_article}}</small>
       </div>
+    </div>
+    <div class="row" id="imageandtable">
+        <div class = "col-md-8">
+            <h3 class="heading">Featured Mars Image</h3>
+            <img src = {{listings.featured_image_url}} alt="Featured image from Mars">
+        </div>
+        <div class = "col-md-4">
+            <h4 class = "heading">Mars Facts</h4>
+            {{listings.table | safe}}
+        </div>
     </div>
 
   </div>
