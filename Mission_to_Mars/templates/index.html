@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Find a Phone</title>
+  <title>Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -13,15 +13,15 @@
   <div class="container">
 
     <div class="jumbotron text-center">
-      <h1>Phone Shoppin'</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Find a phone!</a></p>
+      <h1>Mars is Cool</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape!</a></p>
     </div>
 
     <!-- Phone Listings -->
     <div class="row" id="craiglist-listings">
       <div class="col-md-12">
-        <h4 class="heading">{{listings.price}} {{listings.headline}}</h4>
-        <small>{{listings.reviews}}</small>
+        <h4 class="heading">{{listings.newest_title}} {{listings.newest_article}}</h4>
+        <small>{{listings.newest_title}}</small>
       </div>
     </div>
 
